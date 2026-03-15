@@ -1,6 +1,6 @@
 import { useEffect, useState, useRef } from "react";
 
-const BACKEND_URL = "http://localhost:8000";
+const BACKEND_URL = "https://eduweave-backend.onrender.com";
 
 export default function LessonStream({ topic }) {
   const [blocks, setBlocks] = useState([]);

@@ -20,6 +20,8 @@ app.add_middleware(
     allow_origins=["*"],  # tighten this in production
     allow_methods=["*"],
     allow_headers=["*"],
+    allow_credentials=True,  # ← add this
+    expose_headers=["*"],
 )
 
 # Thread pool for blocking Imagen calls
